@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>Mile</title>
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--<link rel="icon" href="./images/favicon.png" sizes="64*64"/>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="wrapper index">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <h1 class="logo child_position">
+                        <a href="#" title="Homepage link">
+                            <img src="./images/Miles-logo03_small.png" alt="logo"/>
+                        </a>
+                    </h1> <!-- END logo-->
+                </div> <!-- END col-lg-3-->
+
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <nav class="navbar navbar-default navbar-fixed-top gnbbox child_position">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle mobileBtn" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div> <!-- END navbar-header-->
+
+                        <div class="navbar_right collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#section1">
+                                        Roadmap
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#section2">
+                                        Solution
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#section3">
+                                        Whitepaper
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#section4">
+                                        System
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#section5">
+                                        Partners
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="navbar navbar-nav lnbbox child_position">
+                                {{^loginUser}}
+                                <li>
+                                    <a href="/login/lgtab">
+                                        Login
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/login/jointab">
+                                        Join
+                                    </a>
+                                </li>
+                                {{/loginUser}}
+
+                                {{#loginUser}}
+                                <li>
+                                    <a href="/login/lgtab">
+                                        DashBoard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/userLogout">
+                                        Logout
+                                    </a>
+                                </li>
+                                {{/loginUser}}
+                            </ul> <!--- END lnbbox-->
+                        </div> <!-- END navbar_right-->
+                    </nav>
+                </div> <!-- END col-lg-9 -->
+            </div> <!-- END row -->
+
+        </div> <!-- END container-->
+    </header><!-- END header-->
+
+    <div class="main">
+        <section class="visual">
+            <div class="visualBigBox">
+                <div class="visualinnerBox">
+                    <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="visualBox">
+                                <div class="visualText">
+                                    <h1 class="title">
+                                        Ticket payment platform with block chain
+                                    </h1><!-- END title-->
+                                    <p class="title_desc title_desc1">
+                                        Airline mileage system utilizing Ethereum platform
+                                    </p><!-- END title_desc-->
+
+                                    {{#progress}}
+                                    <div class="mileLiveBox">
+                                        <h3>Mile Token Sale is LIVE</h3>
+                                        <div id="newcountdown"></div>
+                                    </div> <!-- END mileLiveBox-->
+
+                                    <div class="mileProcess">
+                                        <div class="processText">
+                                            <div>
+
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar"
+                                                     role="progressbar"
+                                                     aria-valuenow="{{selled}}"
+                                                     aria-valuemin="0"
+                                                     aria-valuemax="{{target}}">
+                                                    <span id="selled">{{selled}}</span> Mile Sold ({{percent}}%)
+                                                    <span class="fa fa-space-shuttle visual_icon"></span>
+                                                </div> <!-- END progress-bar-->
+
+                                            </div><!-- END progress-->
+                                        </div> <!-- END processText-->
+                                        <div class="processBar"></div>
+                                    </div> <!--- END mileProcess-->
+                                    <input type="hidden" value="{{percent}}" id="percent">
+                                    <input type="hidden" value="{{endDate}}" id="endDate">
+
+                                    {{/progress}}
+
+                                    <p class="title_desc title_desc2">
+                                        Thank you for making the Mile token sale an overwhelming success, with all your
+                                        trust
+                                        and support !
+                                    </p><!-- END desc-->
+
+                                    <a href="/login/lgtab" title="mile token status link" class="statusBtn">Mile DashBoard</a>
+
+                                    <span class="title_Sdesc">
+                                         Mile token smart contract : View at etherscan.io<br/>
+                                         For the list of ERC20 compatible wallets and questions on how to view the  Mile token, please refer to FAQ
+                                    </span> <!-- END title_Sdesc-->
+
+
+                                </div> <!-- END visualText-->
+                                <div class="airplane_icon1"></div>
+                            </div> <!-- END visualBox-->
+                        </div> <!-- END col-sm-12-->
+                    </div> <!-- END row-->
+
+                </div> <!-- END container-->
+                </div> <!-- END visualinnerBox-->
+            </div><!--- END visualBigBox-->
+        </section> <!-- END visual-->
+
+        <section class="m_content mc1" id="section1">
+            <div class="mc1_outer">
+                <div class="mc1_inner">
+                    <div class="contents">
+                        <h3 class="smallTitle">ROADMAP</h3> <!-- END smallTitle-->
+                        <div class="roadmapImg clearfix">
+                            <div class="leftLine">
+                                <div class="topImg"></div> <!-- END topImg-->
+                                <div class="bottomImg"></div> <!-- END bottomImg-->
+                                <div class="roadmapBigBox">
+                                    <div class="roadmapBox_start">
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">Mile</p>
+                                            <p class="roadmapDesc">Launched</p>
+                                        </div> <!-- END roadmapTxt-->
+                                        <div class="roadmap"></div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox1">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.2</p>
+                                            <p class="roadmapDesc">ICO Launching</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox2">
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.3</p>
+                                            <p class="roadmapDesc">Primary ICO</p>
+                                        </div>
+                                        <div class="roadmap"></div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox3">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.4</p>
+                                            <p class="roadmapDesc">Secondary ICO</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox4">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.5</p>
+                                            <p class="roadmapDesc">Tertiary ICO</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox5">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.6</p>
+                                            <p class="roadmapDesc">Quarternary ICO</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox6">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.8</p>
+                                            <p class="roadmapDesc">Market Research</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox7">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.9</p>
+                                            <p class="roadmapDesc">Concept Development <br/> for Mile Payment System</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox8">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2018.11</p>
+                                            <p class="roadmapDesc">Airline Payment System <br/> MVP Development</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox9">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2019.1</p>
+                                            <p class="roadmapDesc">Mileage.com Customer <br/> Website Open <br/> for Alphtest</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox10">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2019.2</p>
+                                            <p class="roadmapDesc">Mileage.com Intergration <br/> with Blockchain</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox11">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2019.3</p>
+                                            <p class="roadmapDesc">Token Payment System <br/> for Mileage.com Service</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox12">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2019.5</p>
+                                            <p class="roadmapDesc">API Launch</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+
+                                    <div class="roadmapBox roadmapBox13">
+                                        <div class="roadmap"></div>
+                                        <div class="roadmapTxt">
+                                            <p class="roadmapTitle">2019.7</p>
+                                            <p class="roadmapDesc">IOS, Android App. <br/> Launch</p>
+                                        </div>
+                                    </div> <!-- END roadmapBox-->
+                                </div> <!-- END roadmapBigBox-->
+                            </div> <!--END leftLine-->
+
+                            <div class="rightLine">
+                                <div class="rightCircle">
+
+                                </div> <!-- END rightCircle-->
+                            </div> <!-- END rightLine--->
+                        </div> <!-- END roadmapImg-->
+                    </div> <!-- END contents-->
+
+                    <div class="airplane_icon2">
+                        <img src="images/mc1_plane.png" alt="icon"/>
+                    </div>
+                </div> <!-- END mc1_inner-->
+            </div> <!-- END mc1_outer-->
+        </section> <!-- END m_content mc1-->
+
+        <div class="section_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="smallTitle">SAVE YOUR MILEAGE</h3> <!-- END smallTitle-->
+                        <p class="barDesc">Connect mileage with block chain technology.</p>
+                    </div> <!-- END col-sm-12-->
+                </div> <!--- END row-->
+            </div> <!-- END container-->
+
+            <div class="section_plane_icon">
+                <img src="./images/sidebar_plane.png" alt="plane_icon"/>
+            </div> <!-- END section_plane_icon-->
+
+        </div> <!-- END section_Bar-->
+        <section class="m_content mc2_1" stlye="padding-top:70px;padding-bottom:50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="smallTitle" style="color:#666;padding-bottom:30px;text-align:center;">DISTRIBUTION</h3>
+                        <div class="imageBox" style="width:100%;">
+                            <img src="images/mile_g.png" style="width:100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m_content mc2" id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mc2_txt">
+                            <h3 class="smallTitle">
+                                Blockchain Solution
+                            </h3> <!-- END smallTitle-->
+                            <p class="small_desc">
+                                Advantages of Mile blockchain solution for Flight
+                            </p> <!-- END small_desc-->
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="solution solution1"></div><!-- END solution-->
+                                    <p class="detail_desc">Blockchain technology ensures that<br/>vital log data cannot
+                                        be altered.</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="solution solution2"></div><!-- END solution-->
+                                    <p class="detail_desc">Multi-sig authentication<br/>system provieds data security
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="solution solution3"></div><!-- END solution-->
+                                    <p class="detail_desc">Information is stored in the blockchain, <br/> transactions
+                                        are transparent and can be <br/> viewed by all users.</p>
+                                </div>
+                            </div> <!-- END row-->
+                        </div> <!-- END mc2_txt-->
+                    </div><!-- END col-sm-12 -->
+                </div> <!--- END row-->
+
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <h3 class="smallTitle smallTitle1">
+                            How it Works
+                        </h3>
+                        <span class="titleDesc">Payment Mechaism</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="worksList">
+                            <li>
+                                <h5>Customer</h5>
+                                <p>Pays with any major cryptocurrency,
+                                    with a low conversion fee, or with
+                                    MileageToken with zero conversion fee.</p>
+                            </li>
+                            <li>
+                                <h5>Mile</h5>
+                                <p>Funds are immediately converted to
+                                    fiat currency in order to protect the
+                                    seller from market volatility.</p>
+                            </li>
+                            <li>
+                                <h5>Alliance</h5>
+                                <p>Receives in fiat currency and can
+                                    withdraw to a bank account, keep
+                                    it in wallet or convert it to other
+                                    cryptocurrency.</p>
+                            </li>
+                        </ul><!-- END worksList-->
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="blockchainImg">
+                            <img src="./images/mc2_howitwork.png">
+                        </div> <!-- END blockchainImg-->
+                        <span class="blockchainDesc">
+                                <strong>
+                                    Mile Blockchain Airline Reservation Platform
+                                </strong>
+                            </span>
+                    </div>
+                </div> <!-- END row-->
+            </div> <!-- END container-->
+        </section> <!-- END m_content mc2-->
+
+        <section class="m_content mc3" id="section3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <div class="whitepaperImg">
+                        </div> <!-- END whitepaperImg-->
+                    </div> <!-- END col-sm-4-->
+
+                    <div class="col-sm-7">
+                        <h3 class="smallTitle">Mile Whitepaper</h3> <!-- END smallTitle-->
+                        <p class="small_desc">
+                            We’re thrilled to release Mile whitepaper.
+                            This whitepaper introduces the safe problems we’ve faced in aviation industry,
+                            and how Mile solves them. It also includes about Mile Tokens,
+                            which are a balance between reward and purchasing mechanism for
+                            aviation data submissions and trade in Mile platform.
+                        </p> <!-- END small_desc-->
+
+                        <span class="plusTxt">View the White Paper in</span>
+                        <div class="whitepaperBtn">
+                            <p class="text-right">
+                                <a href="#">Coming soon_in Translation</a>
+                            </p>
+                        </div> <!-- END whitepaperBtn-->
+                    </div> <!-- END col-sm-7-->
+
+                </div> <!--- END row-->
+            </div> <!-- END container-->
+        </section> <!-- END m_content mc3-->
+
+        <section class="m_content mc4" id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="smallTitle">Mile Decentralised Airline Reservation System</h3> <!-- END smallTitle-->
+                        <p class="small_desc">
+                            Use the Mile Platform flight search to track the prices of selected flight and destinations.
+                            Check daily and show price changes.
+                        </p> <!-- END small_desc-->
+                    </div> <!-- END col-sm-12-->
+                </div> <!--- END row-->
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="reservation reservation1">
+                            <div class="reserImg reserImg1"></div>
+                            <h5>Decentralization</h5>
+                            <p class="detail_desc">
+                                It is a new dApp. with independent governance for everyone using a decentralized
+                                network.
+                            </p>
+                        </div><!-- END reservation-->
+                    </div> <!-- END col-sm-3-->
+
+                    <div class="col-sm-3">
+                        <div class="reservation reservation2">
+                            <div class="reserImg reserImg2"></div>
+                            <h5>Price tracking for flights</h5>
+                            <p class="detail_desc">
+                                Select your flights and tap the “Track” button to start tracking prices.
+                            </p>
+                        </div><!-- END reservation-->
+                    </div> <!-- END col-sm-3-->
+
+                    <div class="col-sm-3">
+                        <div class="reservation reservation3">
+                            <div class="reserImg reserImg3"></div>
+                            <h5>Price tracking for destinations</h5>
+                            <p class="detail_desc">
+                                Select your destination and dates, and tap the "Track" button to start tracking the
+                                cheapest flights.
+                            </p>
+                        </div><!-- END reservation-->
+                    </div> <!-- END col-sm-3-->
+
+                    <div class="col-sm-3">
+                        <div class="reservation reservation4">
+                            <div class="reserImg reserImg4"></div>
+                            <h5>Easy sharing</h5>
+                            <p class="detail_desc">
+                                Share your tracked flights with family or friends for easier planning.
+                            </p>
+                        </div><!-- END reservation-->
+                    </div> <!-- END col-sm-3-->
+                </div> <!-- END row-->
+            </div> <!-- END container-->
+        </section> <!-- END m_content mc4-->
+
+        <!--<section class="m_content mc4_add1">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-2">-->
+                        <!--<h3 class="smallTitle"> News &amp; <br/> Media</h3>-->
+                        <!--<p class="small_desc"> News &amp; media coverage on Mile</p>-->
+                    <!--</div> &lt;!&ndash; END com-sm-2 &ndash;&gt;-->
+                    <!--<div class="col-lg-10">-->
+                        <!--<div class="newsBigBox">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-lg-4 col-xs-6">-->
+                                    <!--<div class="newsBox newsBox1">-->
+                                        <!--<span class="blueBar"></span>-->
+                                        <!--<a href="#">-->
+                                            <!--<img src="./images/news1.png"/>-->
+                                        <!--</a>-->
+                                    <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+
+                                    <!--<div class="newsBox newsBox4">-->
+                                        <!--<span class="blueBar"></span>-->
+                                        <!--<a href="#">-->
+                                            <!--<img src="./images/news4.png"/>-->
+                                        <!--</a>-->
+                                    <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+                                <!--</div>-->
+                                <!--<div class="col-lg-4 col-xs-6">-->
+                                    <!--<div class="newsBox newsBox2">-->
+                                        <!--<span class="blueBar"></span>-->
+                                        <!--<a href="#">-->
+                                            <!--<img src="./images/news2.png"/>-->
+                                        <!--</a>-->
+                                    <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+
+                                    <!--<div class="newsBox newsBox5">-->
+                                        <!--<span class="blueBar"></span>-->
+                                        <!--<a href="#">-->
+                                            <!--<img src="./images/news5.png"/>-->
+                                        <!--</a>-->
+                                    <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+                                <!--</div>-->
+
+                                <!--<div class="col-lg-4 col-xs-12 padding_none">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-12 col-xs-6">-->
+                                            <!--<div class="newsBox newsBox3">-->
+                                                <!--<span class="blueBar"></span>-->
+                                                <!--<a href="#">-->
+                                                    <!--<img src="./images/news3.png"/>-->
+                                                <!--</a>-->
+                                            <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+                                        <!--</div> &lt;!&ndash; END col-sm-12 &ndash;&gt;-->
+
+                                        <!--<div class="col-lg-12 col-xs-6">-->
+                                            <!--<div class="newsBox newsBox6">-->
+                                                <!--<span class="blueBar"></span>-->
+                                                <!--<a href="#">-->
+                                                    <!--<img src="./images/news6.png"/>-->
+                                                <!--</a>-->
+                                            <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+                                        <!--</div> &lt;!&ndash; END col-sm-12&ndash;&gt;-->
+
+                                    <!--</div> &lt;!&ndash; END row&ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; END col-lg-4&ndash;&gt;-->
+                            <!--</div> &lt;!&ndash; END row&ndash;&gt;-->
+                        <!--</div> &lt;!&ndash; END newsBox&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div> &lt;!&ndash; END row&ndash;&gt;-->
+            <!--</div> &lt;!&ndash; END container&ndash;&gt;-->
+        <!--</section> &lt;!&ndash; END m_content mc4_add1&ndash;&gt;-->
+
+        <!--<section class="m_content mc4_add2">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-12">-->
+                        <!--<h3 class="smallTitle">ICO Partners</h3>-->
+                    <!--</div>-->
+                <!--</div> &lt;!&ndash; END row&ndash;&gt;-->
+
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-3 col-xs-6">-->
+                        <!--<div class="partnerBox partnerBox1">-->
+                            <!--<img src="./images/partner1.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+
+                        <!--<div class="partnerBox partnerBox5">-->
+                            <!--<img src="./images/partner5.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+                    <!--</div>-->
+
+                    <!--<div class="col-lg-3 col-xs-6">-->
+                        <!--<div class="partnerBox partnerBox2">-->
+                            <!--<img src="./images/partner2.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+
+                        <!--<div class="partnerBox partnerBox6">-->
+                            <!--<img src="./images/partner6.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+                    <!--</div>-->
+
+                    <!--<div class="col-lg-3 col-xs-6">-->
+                        <!--<div class="partnerBox partnerBox3">-->
+                            <!--<img src="./images/partner3.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+
+                        <!--<div class="partnerBox partnerBox7">-->
+                            <!--<img src="./images/partner7.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+                    <!--</div>-->
+
+                    <!--<div class="col-lg-3 col-xs-6">-->
+                        <!--<div class="partnerBox partnerBox4">-->
+                            <!--<img src="./images/partner4.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+
+                        <!--<div class="partnerBox partnerBox8">-->
+                            <!--<img src="./images/partner8.png"/>-->
+                        <!--</div> &lt;!&ndash;- END partnerBox&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div> &lt;!&ndash; END row&ndash;&gt;-->
+            <!--</div> &lt;!&ndash; END container&ndash;&gt;-->
+        <!--</section> &lt;!&ndash; END m_content mc4_add2&ndash;&gt;-->
+
+        <section class="m_content mc5" id="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="smallTitle">Partners</h3> <!-- END smallTitle-->
+                        <p class="small_desc">
+                            20 member airlines give you access to 1,074 destinations worldwide,
+                            with more flights and connectivity than ever before. Whether for business or leisure,
+                            our network of member airlines makes global travel seamless.
+                            We’re working together to care more about you.
+                        </p>
+
+                        <div class="partnerBox">
+                            <div class="row">
+                                <div class="col-lg-2 col-sm-12 col-xs-12">
+                                    <div class="partnerLogo partnerLogo1">
+                                        <img src="./images/mc4_logo1_1.png"/>
+                                    </div> <!-- END partnerLogo-->
+                                </div> <!-- END col-sm-2-->
+
+                                <div class="col-lg-10 col-sm-12 col-xs-12">
+                                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                                        <div class="partnerLogo partnerLogo2">
+                                            <img src="./images/mc4_logo1_2.png"/>
+                                        </div> <!-- END partnerLogo-->
+                                    </div> <!-- END col-sm-2-->
+
+                                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                                        <div class="partnerLogo partnerLogo3">
+                                            <img src="./images/mc4_logo1_3.png"/>
+                                        </div> <!-- END partnerLogo-->
+                                    </div> <!-- END col-sm-2-->
+
+                                    <div class="col-lg-3 col-sm-6 col-xs-6 clear">
+                                        <div class="partnerLogo partnerLogo4">
+                                            <img src="./images/mc4_logo1_4.png"/>
+                                        </div> <!-- END partnerLogo-->
+                                    </div> <!-- END col-sm-2-->
+
+                                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                                        <div class="partnerLogo partnerLogo5">
+                                            <img src="./images/mc4_logo1_5.png"/>
+                                        </div> <!-- END partnerLogo-->
+                                    </div> <!-- END col-sm-2-->
+                                </div>
+                            </div> <!-- END row-->
+                        </div> <!-- END partnerBox-->
+
+                        <div class="starBox">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="partnerBigLogo"></div>
+                                </div> <!-- END col-sm-12-->
+                            </div> <!-- END row-->
+
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6 col-xs-6">
+                                    <div class="partnerLogoTwo partnerLogo6">
+                                        <img src="./images/mc4_logo2_1.png"/>
+                                    </div> <!-- END partnerLogoTwo-->
+                                </div> <!-- END col-sm-3-->
+
+                                <div class="col-lg-3 col-sm-6 col-xs-6">
+                                    <div class="partnerLogoTwo partnerLogo7">
+                                        <img src="./images/mc4_logo2_2.png"/>
+                                    </div> <!-- END partnerLogoTwo-->
+                                </div> <!-- END col-sm-3-->
+
+                                <div class="col-lg-3 col-sm-6 col-xs-6">
+                                    <div class="partnerLogoTwo partnerLogo8">
+                                        <img src="./images/mc4_logo2_3.png"/>
+                                    </div> <!-- END partnerLogoTwo-->
+                                </div> <!-- END col-sm-3-->
+
+                                <div class="col-lg-3 col-sm-6 col-xs-6">
+                                    <div class="partnerLogoTwo partnerLogo9">
+                                        <img src="./images/mc4_logo2_4.png"/>
+                                    </div> <!-- END partnerLogoTwo-->
+                                </div> <!-- END col-sm-3-->
+                            </div> <!-- END row-->
+
+
+                        </div> <!-- END starBox-->
+                    </div> <!-- END col-sm-12-->
+                </div> <!--- END row-->
+            </div> <!-- END container-->
+
+            <div class="airplane_icon3">
+                <img src="images/mc4_plane.png" alt="icon"/>
+            </div>
+
+        </section> <!-- END m_content mc5-->
+
+    </div> <!-- END main-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="leftFooter text-left">
+                        <div class="footerImg">
+                            <p><img src="../../images/slogo.png" alt="logo"/></p>
+                        </div> <!-- END footerImg-->
+
+                        <div class="emailBox clearfix">
+                            <p class="subTitle">Subscribe to our newsletter</p>
+                            <form action="" class="emailForm" method="post">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email address" name="email" id="subs_email"/>
+                                    <input type="submit" value="Subscribe" id="subs_btn"/>
+                                </div>
+                            </form> <!-- END emailForm-->
+                        </div> <!-- END emailBox-->
+
+                        <div class="footerSubBox">
+                            <a href="./kycpdf/Use.pdf" target="_blank">Terms and Policy</a>
+                            <a href="./kycpdf/Policy.pdf" target="_blank">Privacy Policy</a>
+                        </div> <!-- END footerSubBox--->
+                    </div><!-- END leftFooter-->
+                </div> <!-- END col-sm-6-->
+
+                <div class="col-sm-7">
+                    <div class="rightFooter">
+                        <span class="rightFootertitle">Social</span>
+                        <ul class="footerImgBox clearfix">
+
+                            <li class="footerIcon">
+                                <div class="iconBox blogger">
+                                    <a href="http://mileplatform.blogspot.kr" title="blogger link" target="_blank"></a>
+                                    <span class="iconName">blogger</span>
+                                </div> <!-- END iconBox-->
+                            </li>
+
+                            <li class="footerIcon">
+                                <div class="iconBox facebook">
+                                    <a href="https://www.facebook.com/Mileplatform" title="facebook link" target="_blank"></a>
+                                    <span class="iconName">facebook</span>
+                                </div> <!-- END iconBox-->
+                            </li>
+
+                            <li class="footerIcon">
+                                <div class="iconBox twitter">
+                                    <a href="https://twitter.com/Mile_Official?lang=ko" title="twitter link" target="_blank"></a>
+                                    <span class="iconName">twitter</span>
+                                </div> <!-- END iconBox-->
+                            </li>
+
+                            <li class="footerIcon">
+                                <div class="iconBox telegram">
+                                    <a href="https://t.me/joinchat/HJzvJQ9Id0nNRnv8TqsKHA" title="telegram link"  target="_blank"></a>
+                                    <span class="iconName">telegram</span>
+                                </div> <!-- END iconBox-->
+                            </li>
+
+                            <li class="footerIcon">
+                                <div class="iconBox steemit">
+                                    <a href="https://steemit.com/@mileplatform" title="steemit link"  target="_blank"></a>
+                                    <span class="iconName">steemit</span>
+                                </div> <!-- END iconBox-->
+                            </li>
+
+                            <li class="footerIcon">
+                                <div class="iconBox github">
+                                    <a href="https://github.com/mileplatform/smart-contract" title="github link"  target="_blank"></a>
+                                    <span class="iconName">github</span>
+                                </div>
+                            </li>
+                        </ul> <!-- END footerImgBox-->
+                    </div><!-- END rightFooter-->
+                </div> <!-- END col-sm-6 -->
+            </div> <!-- END row-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="copyright">
+                        Copyright &copy; Mile Platform Team
+                        <a href="mailto:support@mileplatform.com">support@mileplatform.com</a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- END container-->
+    </footer> <!-- END footer-->
+</div> <!-- END wrapper index-->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+    $(function () {
+        //*======================================== join login tab
+        //=========================================================
+        $(".lnbbox li:last-child").click(function () {
+            $(".tabBox .nav li:first-child").removeClass("active");
+            $(".tabBox .nav li:last-child").addClass("active");
+        });
+        /*=============================================== finish*/
+
+        //*========================================= countdown
+        //==========================================================
+
+        //yyyy-MM-dd
+        var inputDate = $("#endDate").val();
+
+        var dateArray = inputDate.split("-");
+
+        CountDownTimer(dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0] + ' 00:00 AM', 'newcountdown');
+
+        function CountDownTimer(dt, id) {
+            var end = new Date(dt);
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+
+                    clearInterval(timer);
+
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+                document.getElementById('newcountdown').innerHTML = "<div class='count_box'>";
+                document.getElementById('newcountdown').innerHTML += "<p class='inline'><b>" + days + "</b><span>DAYS</span>";
+                document.getElementById('newcountdown').innerHTML += "<p class='inline'><b>" + hours + "</b><span>HOURS</span>";
+                document.getElementById('newcountdown').innerHTML += "<p class='inline'><b>" + minutes + "</b><span>MINUTES</span>";
+                document.getElementById('newcountdown').innerHTML += "<p class='inline'><b>" + seconds + "</b><span>SECONDS</span>";
+            }
+
+            timer = setInterval(showRemaining, 1000);
+        }
+        var percent = $("#percent").val();
+        $(".progress-bar").css("width", percent + "%");
+        var selled = $("#selled").text();
+        $("#selled").text(Math.round(selled));
+
+
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".gnbbox .nav li a").click(function () {
+            var height = $($(this).attr('href')).offset().top;
+            $("body, html").animate({"scrollTop": height - 50}, 500);
+            return false;
+        });
+
+        var images = ['visual.png', 'visual2.png'];
+        $('.visual').css({'background-image':'url(../../images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+        $("#subs_btn").click(function () {
+            var email = $("#subs_email").val();
+            swal({
+                title: "please double check",
+                text: "Are you sure of this e-mail address?: "+ email,
+                buttons: true,
+                dangerMode: true
+            }).then(ok => {
+                if(ok){
+                    $.ajax({
+                        url: '/subscribe',
+                        type: 'POST',
+                        data: {email: email}
+                    })
+                        .done(function (result) {
+                            if (result == 'success') {
+                                swal('subscribe success', {
+                                    icon: "success"
+                                });
+                                $("#subs_email").val('');
+                            } else {
+                                swal(result);
+                            }
+                        })
+                        .fail(function (err) {
+                            console.error(err);
+                        });
+                }
+            });
+
+            return false;
+        });
+
+    });
+</script>
+</body>
+</html>
