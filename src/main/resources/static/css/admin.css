@@ -1,0 +1,959 @@
+li,
+ol,
+ul{
+    list-style: none;
+}
+
+.clearfix:after{
+    display:block;
+    content: "";
+    clear:both;
+}
+
+/* admin_contents */
+
+.admin_box{
+    background-color:#fff;
+    border-radius: 3px;
+    padding:10px;
+    box-shadow: 0 0 5px #ddd;
+    margin-top:30px;
+}
+
+.admin_box.projectBigBox{
+    position:relative;
+}
+
+.admin_box h3{
+    font-size:110%;
+}
+
+/* admin_contents */
+
+/* admin_account_setting */
+
+.ad_form{
+    padding:5px;
+    width:700px;
+    overflow:hidden;
+}
+
+.ad_form .account_name{
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #d9d9d9;
+    padding:10px;
+    float:left;
+    width:135px;
+}
+
+.ad_form input[type="text"]{
+    float:left;
+    width:380px;
+    padding:10px;
+    border-left:0;
+    border-top:1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius:  0 2px 2px 0;
+    margin-right:10px;
+    text-align: right;
+}
+
+.admin_btn,
+.ad_search_form button[type='submit'],
+.ad_user_list button[type='submit']{
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    padding-left:10px;
+}
+
+.admin_btn:hover,
+.admin_btn:focus,
+.ad_search_form button[type='submit']:hover,
+.ad_search_form button[type='submit']:focus{
+    background-color:#f0eded;
+}
+
+/* admin_exchange_rate */
+
+.ad_txt_bb{
+    float:left;
+    width:55px;
+    padding:10px 0;
+    margin-right:10px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+}
+
+.ad_form.rate_form input[type="text"]{
+    margin-right:0;
+    border-right:0
+}
+
+/* transaction_list */
+
+.bd_bottom{
+    border-bottom: 1px solid #d9d9d9;
+    height:45px;
+    padding:0;
+    line-height: 45px;
+    font-size:90%;
+    margin-bottom: 0;
+}
+
+.ad_tran_list li,
+.ad_user_list li,
+.ad_list li{
+    float:left;
+}
+
+.ad_tran_list li{
+    font-size: 95%;
+}
+
+.ad_tran_list li:nth-child(1){
+    width:10%;
+}
+
+.ad_tran_list li:nth-child(2){
+    width:4%;
+}
+
+.ad_tran_list li:nth-child(3){
+    width:15%;
+}
+
+.ad_tran_list li:nth-child(4){
+    width: 13%;
+}
+
+.ad_tran_list li:nth-child(5){
+    width: 13%;
+}
+
+.ad_tran_list li:nth-child(6){
+    width:8%;
+}
+
+.ad_tran_list li:nth-child(7){
+    width:37%;
+}
+
+
+
+
+.ad_tran_list li:nth-child(7) input,
+.ad_user_txt input[type="password"]{
+    padding-right:5px;
+}
+
+.ad_tran_list,
+.ad_user_list,
+.ad_list{
+    text-align: center;
+}
+
+.ad_tran_txt .ad_txt_form,
+.ad_user_txt input[type="password"]{
+    line-height: 30px;
+    border: 1px solid #d9d9d9;
+    text-align: right;
+}
+
+.ad_tran_txt .admin_btn,
+.ad_tran_detail .admin_btn,
+.ad_user_txt button[type="submit"],
+.ad_user_txt button,
+.ad_list button{
+    padding:0 5px;
+    line-height: 32px;
+}
+
+/* ad_tran_detail */
+
+.ad_tran_detail{
+    padding:20px;
+    border: 1px solid #d9d9d9;
+    margin-top:20px;
+    display:none;
+}
+
+.ad_tran_detail.on{
+    display:block;
+}
+
+.ad_tran_detail:after,
+.ad_user_list:after,
+.ad_list:after{
+    display:block;
+    content:" ";
+    clear: both;
+}
+
+
+.ad_a3{
+    float:left;
+    font-size:90%;
+}
+
+.ad_a31{
+    width:45%;
+}
+
+.ad_a32{
+    width:30%;
+}
+
+.ad_a33{
+    width:25%;
+}
+
+.ad_a3 dt,
+.ad_a3 dd{
+    float:left;
+    line-height:30px;
+}
+
+.ad_a3 dt{
+    width:30%;
+}
+
+.ad_a3 dd{
+    width:70%;
+}
+
+.ad_a33 input[type="text"]{
+    border: 1px solid #d9d9d9;
+    text-align: right;
+    padding-right:5px;
+}
+
+.ad_a33 button[type="button"]{
+    border: 1px solid #d9d9d9;
+    background-color:#fff;
+}
+
+/* user_tab */
+
+.ad_search_form input[type='text'],
+.admin_form input[type='email'],
+.admin_form input[type='text']{
+    border:1px solid #d9d9d9;
+    width:80%;
+    padding:10px;
+    border-radius:2px;
+    margin-right:10px;
+    text-align: right;
+}
+
+#project_tab .admin_form input[type='text']{
+    width: 40%;
+}
+
+
+.ad_user_list li:nth-child(1){
+    width:9%;
+}
+
+.ad_user_list li:nth-child(2){
+    width:13%;
+}
+
+.ad_user_list li:nth-child(3){
+    width: 19%;
+}
+.ad_user_list li:nth-child(4){
+    width: 15%;
+}
+.ad_user_list li:nth-child(5){
+    width: 17%;
+}
+.ad_user_list li:nth-child(6){
+    width:17%;
+}
+.ad_user_list li:nth-child(7){
+    width:10%;
+}
+
+/* adv_tab */
+
+.ad_list li:nth-child(1){
+    width:15%;
+}
+
+.ad_list li:nth-child(2){
+    width:45%;
+}
+
+.ad_list li:nth-child(3){
+    width:40%;
+}
+
+/*js add*/
+
+.position_re{
+    position:relative;
+}
+
+.ad_num_action.on{
+    border:1px solid red;
+}
+
+.js_num{
+    color:red;
+    position: absolute;
+    right:470px;
+}
+
+.ad_tran_txt.on{
+    background-color: #f0eded;
+}
+
+/*projectTab*/
+
+.proDetailForm h5{
+    border-bottom:1px solid #ddd;
+}
+
+.proDetailForm h5 a:link,
+.proDetailForm h5 a:visited{
+    display:block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: #000;
+}
+
+.proDetailForm h5 a:hover,
+.proDetailForm h5 a:focus{
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.project_detail{
+    border: 1px solid #ddd;
+    padding:20px;
+}
+
+.proSetting{
+    float:left;
+    width: 50%;
+    height: 100px;
+}
+
+.proSetting .ad_form{
+    width: 100%;
+}
+
+.goalCoin input[type='text']{
+    width: 40%;
+    float:left;
+}
+
+
+.project_detail{
+    position: relative;
+}
+
+.proDetailBox .admin_btn{
+    position: absolute;
+    top:8px;
+    right: 8px;
+}
+
+.processNow .progress{
+    height: 35px;
+}
+
+.processNow .progress-bar{
+    line-height: 35px;
+    background-color: #3131d1;
+}
+
+.processNow .ad_form .account_name{
+    width: 100px;
+}
+/*admin_kyc*/
+
+/*header*/
+.kycAdmin{
+    background-color: #eeeeee;
+}
+
+.kycAdmin .header{
+    height: 230px;
+}
+
+.topBox{
+    background: -moz-linear-gradient(left, #61cdd0 0%, #34229e 100%);
+    background: -webkit-linear-gradient(left, #61cdd0 0%,#34229e 100%);
+    background: linear-gradient(to right, #61cdd0 0%,#34229e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61cdd0', endColorstr='#34229e',GradientType=1 );
+    margin-bottom:30px;
+}
+
+.topBox h3{
+    margin:0;
+    color: #fff;
+    padding:22px 0;
+    text-align: center;
+}
+
+.kycLogoBox{
+    text-align: center;
+}
+
+.mainBox{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom:50px;
+}
+
+.m_content{
+    text-align: center;
+    padding-bottom:50px;
+}
+
+.m_content input[type="checkbox"]{
+    font-size: 15px;
+}
+
+.m_content input[type="text"]{
+    border: 1px solid #dddddd;
+    height: 38px;
+    line-height: 38px;
+    width: 35%;
+}
+
+.m_content.mc11 input[type="text"]{
+    width: 20%;
+}
+
+.kyc_btn{
+    text-align: center;
+}
+
+.kyc_btn button{
+    height: 38px;
+    line-height: 38px;
+    width: 15%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.kyc_btn button[type="submit"]{
+    background-color: #3131d1;
+    color: #fff;
+}
+
+.disagreeBox{
+    padding-top:50px;
+    width: 100%;
+    text-align: center;
+}
+
+.disagreeBox span{
+    display:block;
+}
+
+.disagreeBox textarea{
+    display: inline-block;
+    width: 85%;
+    margin:30px auto 0;
+    height: 100px;
+    border: 1px solid #ddd;
+}
+input.kycSubmit {
+    margin-top: 20px;
+    border: 0;
+    background-color: #3131d1;
+    color: #fff;
+    width: 180px;
+    height: 40px;
+}
+
+#project_tab .admin_box h3{
+    margin-top:10px;
+}
+
+.transaction_list{
+    position:relative;
+}
+
+.selectBox{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+select.trans_select{
+    width: 80px;
+    height: 30px;
+}
+
+/*mail_tab*/
+
+.allCheck{
+    text-align: right;
+    padding-right: 15px;
+}
+
+#mail_tab input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+}
+
+.mailBtnBox{
+}
+
+.mailBtn{
+    border: 0;
+    color: #fff;
+    background-color:#3131d1;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+/* response */
+
+@media all and (min-width:1200px){}
+@media all and (min-width:992px) and (max-width:1199px){
+
+    .ad_a3 dt,
+    .ad_a3 dd{
+        width:100%;
+        float:inherit;
+    }
+
+    .ad_form .account_name{
+        font-size: 75%;
+        width: 100%;
+    }
+    #project_tab .admin_form input[type='text'],
+    .ad_txt_bb{
+        font-size:75%;
+    }
+
+    #project_tab .admin_box h3,
+    .proDetailBox .admin_btn,
+    .bd_bottom{
+        font-size:80%;
+    }
+
+
+}
+@media all and (min-width:768px) and (max-width:991px){
+    #admin .container{
+        width:100%;
+    }
+
+    #admin .main .main_left .nav li{
+        width: 25%;
+    }
+
+    .ad_search_form.admin_box{
+        margin-top: 0;
+    }
+
+    #user_tab{
+        padding-top:30px;
+    }
+
+    .ad_form input[type="text"]{
+        width: 300px;
+    }
+
+    .ad_a3 dt,
+    .ad_a3 dd{
+        width:100%;
+        float:inherit;
+        font-size:90%;
+    }
+
+    .bd_bottom{
+        font-size:80%;
+    }
+    .ad_tran_list{}
+
+    .ad_tran_list li:nth-child(1){
+        /*        width:25%;*/
+    }
+
+    .ad_tran_list li:nth-child(2){
+        width:20%;
+    }
+
+    .ad_tran_list li:nth-child(3),
+    .ad_tran_list li:nth-child(4){
+        display: none;
+    }
+
+    .ad_tran_list li:nth-child(5){
+        width:14%;
+    }
+
+    .ad_tran_list li:nth-child(6){
+        width:50%;
+    }
+
+
+
+    .ad_txt_form,
+    .ad_a33 input[type="text"]{
+        width:80px;
+    }
+
+    .proSetting{
+        float:inherit;
+        width: 100%;
+        height: inherit;
+    }
+
+    .ad_form .account_name{
+        font-size: 75%;
+        width: 100%;
+    }
+    #project_tab .admin_form input[type='text'],
+    .ad_txt_bb{
+        font-size:75%;
+    }
+
+    #project_tab .admin_box h3,
+    .proDetailBox .admin_btn,
+    .bd_bottom{
+        font-size:80%;
+    }
+
+    .proSetting .ad_form{
+        padding:0;
+    }
+
+
+}
+@media all and (min-width:481px) and (max-width:767px){
+
+    #admin .main .main_left .nav li{
+        width: 25%;
+    }
+
+    .ad_a3 dt,
+    .ad_a3 dd{
+        width:100%;
+        float:inherit;
+        font-size:90%;
+    }
+
+    .bd_bottom{
+        font-size:80%;
+    }
+
+    .ad_tran_list li:nth-child(1){
+        width:30%;
+    }
+
+    .ad_tran_list li:nth-child(2){
+        width: 15%;
+    }
+
+    .ad_tran_list li:nth-child(3),
+    .ad_tran_list li:nth-child(4){
+        display: none;
+    }
+
+    .ad_tran_list li:nth-child(5){
+        width:33%;
+    }
+
+    .ad_tran_list li:nth-child(6){
+        width: 22%;
+    }
+
+    .ad_tran_list li:nth-child(7){
+        display: none;
+    }
+
+
+
+    .ad_txt_form,
+    .ad_a33 input[type="text"]{
+        width:120px;
+    }
+
+    .ad_user_txt input[type="password"]{
+        width:90px;
+    }
+
+    /* add_ */
+
+    .ad_form{
+        font-size:90%;
+        width: 100%;
+    }
+
+    .ad_form .account_name{
+        width: 95px;
+    }
+    .ad_form input[type="text"]{
+        width:195px;
+    }
+
+    .ad_a31{
+        float:inherit;
+        width:100%;
+    }
+
+    .ad_a32,
+    .ad_a33{
+        width:50%;
+    }
+
+    .proSetting{
+        float:inherit;
+        width: 100%;
+        height: inherit;
+    }
+
+    .ad_form .account_name{
+        font-size: 75%;
+    }
+    #project_tab .admin_form input[type='text'],
+    .ad_txt_bb{
+        font-size:75%;
+    }
+
+    #project_tab .admin_box h3,
+    .proDetailBox .admin_btn,
+    .bd_bottom{
+        font-size:80%;
+    }
+
+    .proSetting .ad_form{
+        padding:0;
+    }
+
+    .proDetailForm p{
+        margin-top:10px;
+    }
+
+    .project_detail{
+        border:0;
+        padding:0;
+    }
+
+
+    .proDetailBox .admin_btn{
+        position:static;
+        width:100%;
+        margin-top:20px;
+    }
+
+    .admin_account_form .ad_txt_form{
+        width: 60%!important;
+    }
+
+
+}
+@media all and (max-width:480px){
+
+    #admin .main .main_left .nav li{
+        width: 33.33333%;
+    }
+
+    #admin h3{
+        font-size:13px;
+    }
+
+    .admin_box{
+        border-radius: 0
+
+    }
+
+    .ad_a3 dt,
+    .ad_a3 dd{
+        width:100%;
+        float:inherit;
+        font-size:90%;
+    }
+
+    .bd_bottom{
+        font-size:80%;
+    }
+
+    .ad_tran_list li:nth-child(1){
+        width:30%;
+    }
+
+    .ad_tran_list li:nth-child(2){
+        width: 15%;
+    }
+
+    .ad_tran_list li:nth-child(3),
+    .ad_tran_list li:nth-child(4){
+        display: none;
+    }
+
+    .ad_tran_list li:nth-child(5){
+        width:33%;
+    }
+
+    .ad_tran_list li:nth-child(6){
+        width: 22%;
+    }
+
+    .ad_tran_list li:nth-child(7){
+        display: none;
+    }
+
+
+
+
+    .ad_txt_form,
+    .ad_a33 input[type="text"]{
+        width:120px;
+    }
+
+    .ad_user_list li:nth-child(1){
+        width:12%;
+    }
+
+    .ad_user_list li:nth-child(2){
+        display:none;
+    }
+
+    .ad_user_list li:nth-child(3){
+        width: 52%;
+    }
+
+
+
+    .ad_user_list li:nth-child(4){
+        width: 33%;
+    }
+
+    .ad_user_list li:nth-child(5){
+        display: none;
+    }
+
+    .ad_user_list li:nth-child(6),
+    .ad_user_list li:nth-child(7){
+        display:none;
+    }
+
+    .ad_user_txt input[type="password"]{
+        width:90px;
+    }
+
+    /* add_ */
+
+    .ad_form{
+        font-size:90%;
+        width: 100%;
+    }
+
+    .ad_form .account_name{
+        width: 95px;
+        font-size:90%;
+    }
+    .ad_form input[type="text"]{
+        width:95px;
+        font-size: 90%;
+    }
+
+    .ad_txt_bb,
+    .ad_form input[type="text"],
+    .ad_form .account_name{
+        margin-bottom:20px;
+    }
+
+    .ad_a3{
+        float:inherit;
+        width:100%;
+    }
+
+    .ad_txt_bb,
+    .total_tran,
+    .total_user,
+    .admin_form input[type="email"],
+    .ad_search_form input[type="text"],
+    .admin_btn, .ad_search_form button[type='submit'],
+    .ad_user_list button[type='submit']{
+        font-size:90%;
+    }
+
+    .ad_a3 dd{
+        font-size:50%;
+    }
+
+    /* add_2*/
+
+    .nav-tabs.admin_tab_btn li,
+    .ad_logout{
+        font-size: 85%;
+    }
+
+    .ad_logout{
+        top:75px;
+        color: #283039;
+    }
+
+    .ad_search_form input[type='text'],
+    .admin_form input[type='email']{
+        width:70%;
+    }
+
+    .proSetting{
+        float:inherit;
+        width: 100%;
+        height: inherit;
+    }
+
+    .proDetailBox .admin_form .proSetting input[type='text']{
+
+    }
+
+    .ad_form .account_name{
+        font-size: 75%;
+    }
+    #project_tab .admin_form input[type='text'],
+    .ad_txt_bb{
+        font-size:75%;
+    }
+
+    #project_tab .admin_box h3,
+    .proDetailBox .admin_btn,
+    .bd_bottom{
+        font-size:80%;
+    }
+
+    .proSetting .ad_form{
+        padding:0;
+    }
+
+    .proDetailForm p{
+        margin-top:10px;
+    }
+
+    .project_detail{
+        border:0;
+        padding:0;
+    }
+
+    .proDetailBox .admin_btn{
+        position:static;
+        width:100%;
+        margin-top:20px;
+    }
+
+    .admin_account_form .ad_txt_form{
+        width: 60%!important;
+    }
+}
+
