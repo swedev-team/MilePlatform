@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="eafa3031-46e3-489f-bdd7-ef793f63aa56" name="mile" url="http://35.177.104.14">
+        <fileTransfer host="35.177.104.14" port="22" privateKey="D:\pem\aws-london-mileico.pem" rootFolder="/home/dany/tomcat/webapps/ROOT/WEB-INF/classes/com/example/mileico/scheduler" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

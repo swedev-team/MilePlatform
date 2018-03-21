@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdminHistory</title>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/css/ui.jqgrid.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+    <!--<link rel="icon" href="./images/favicon.png" sizes="64*64"/>-->
+    <!--jqury ui-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--jqgrid-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/i18n/grid.locale-kr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/jquery.jqGrid.min.js"></script>
+    <style>
+        .ui-jqgrid tr.ui-row-ltr td {
+            text-align: center;
+            border-right-width: 1px;
+            border-right-color: inherit;
+            border-right-style: solid;
+        }
+    </style>
+
+</head>
+<body>
+    <table id="grid">
+
+    </table>
+    <div id="pager">
+
+    </div>
+    <script>
+        function dataInit(){
+            $("#grid").jqGrid({
+                url: '/adminHistory',
+                mtype: 'GET',
+                datatype: 'json',
+                height: 'auto',
+                width: 'auto',
+                autowidth: true,
+                loadonce: true,
+                caption: 'Admin History',
+                rowNum:20,
+                pager:'#pager',
+                rownumbers:true,
+
+                colModel: [
+                    {label: 'ID', name: 'id', index:'id', width:10, sortable:true},
+                    {label: 'Admin E-MAIL', name: 'email', index:'email', width:30},
+                    {label: 'ACTION', name: 'action', index: 'action', width:50, sortable:true},
+                    {label: 'DATE', name: 'date', index: 'date', width:20, sortable:true}
+                ]
+            }).navGrid('#pager',{
+                edit: false,
+                add : false,
+                del : false,
+                search : true,
+                refresh: true,
+                view: false
+            })
+        }
+
+        dataInit();
+    </script>
+</body>
+</html>
