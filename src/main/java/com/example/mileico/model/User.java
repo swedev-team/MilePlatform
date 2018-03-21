@@ -51,7 +51,7 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     private Date joinDate;
 
-    @Column(length = 1 , nullable = false , columnDefinition = "default=n")
+    @Column(length = 1)
     private String withdraw = "n";
 
     @Basic(optional = false)
