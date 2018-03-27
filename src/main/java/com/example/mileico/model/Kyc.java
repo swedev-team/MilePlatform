@@ -20,7 +20,6 @@ public class Kyc {
 
     private String third;
 
-
     @Column(columnDefinition = "longblob")
     private byte[] passport;
 

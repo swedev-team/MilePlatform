@@ -19,7 +19,7 @@ public class Dispatcher {
     HttpURLConnection conn;
 
     public void setConnection(String adminAddr) throws IOException {
-        HttpURLConnection conn = (HttpURLConnection) (new URL(URL2+"&address="+adminAddr+"&startblock=0&endblock=99999999&sort=asc&apikey="+API_KEY2).openConnection());
+        HttpURLConnection conn = (HttpURLConnection) (new URL(URL+"&address="+adminAddr+"&startblock=0&endblock=99999999&sort=asc&apikey="+API_KEY).openConnection());
         conn.setRequestProperty("X-Requested-With", "Curl");
         //conn.setRequestProperty("Authorization", );
         conn.setDoOutput(true);
@@ -33,4 +33,5 @@ public class Dispatcher {
         rd.close();
         return result;
     }
+
 }
