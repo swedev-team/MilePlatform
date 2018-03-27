@@ -30,7 +30,7 @@ public class httpsConfig {
         return tomcat;
     }
 
-    private int serverPortHttp = 8080;
+    private int serverPortHttp = 80;
 
     private int serverPortHttps = 8443;
 
