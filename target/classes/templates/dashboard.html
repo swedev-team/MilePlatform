@@ -144,7 +144,7 @@
                                                        </p>
                                                        {{#loginUser}}
                                                        <div class="kycCheckBox">
-                                                           <div class="kyc_check">
+                                                           <!--<div class="kyc_check">
                                                                <div class="check">
                                                                    {{#isSubmitted}}
                                                                    <img src="../../images/check.png">
@@ -153,7 +153,7 @@
                                                                {{#isSubmitted}}
                                                                <p class="check_desc">Your KYC submission has been verified</p>
                                                                {{/isSubmitted}}
-                                                           </div> <!-- EMD kyc_check-->
+                                                           </div> &lt;!&ndash; EMD kyc_check&ndash;&gt;
 
                                                            <div class="kyc_check">
                                                                <div class="check">
@@ -164,7 +164,49 @@
                                                                {{#kycResult}}
                                                                <p class="check_desc">{{kycResult}}</p>
                                                                {{/kycResult}}
+                                                               <br/>
+                                                               {{failReasonModel}}
+                                                               <br/>
+                                                           </div> &lt;!&ndash; EMD kyc_check&ndash;&gt;-->
+
+                                                           {{^isSubmitted}}
+                                                           <div class="kyc_check">
+                                                               <div class="check">
+                                                                   <img src="../../images/check.png">
+                                                               </div>
+                                                               {{#kycResult}}
+                                                               <p class="check_desc">{{kycResult}}</p>
+                                                               {{/kycResult}}
                                                            </div> <!-- EMD kyc_check-->
+                                                           {{/isSubmitted}}
+
+                                                           {{#isSubmitted}}
+                                                           <div class="kyc_check">
+                                                               {{#isChecked}}
+                                                               <div class="check">
+                                                                   <img src="../../images/check.png">
+                                                               </div>
+                                                               {{#kycResult}}
+                                                               <p class="check_desc">{{kycResult}}</p>
+                                                               {{/kycResult}}
+                                                               {{/isChecked}}
+
+                                                               {{^isChecked}}
+                                                               <div class="check">
+                                                                   <img src="../../images/check.png">
+                                                               </div>
+                                                               {{#kycResult}}
+                                                               <p class="check_desc">{{kycResult}}</p>
+                                                               {{/kycResult}}
+                                                               {{/isChecked}}
+                                                               {{#failReasonModel}}
+                                                               {{failReasonModel}}
+                                                               {{/failReasonModel}}
+                                                           </div> <!-- EMD kyc_check-->
+                                                           {{/isSubmitted}}
+
+
+                                                           {{^isChecked}}
                                                            {{#isSubmitted}}
                                                            <div class="kyc_btn dashBtn">
                                                                <p><a href="/openKyc" title="KYC submit button">KYC Resubmit</a></p>
@@ -175,12 +217,14 @@
                                                                <p><a href="/openKyc" title="KYC submit button">KYC Submit</a></p>
                                                            </div>
 
-                                                           <div class="blackBg_dash">
+                                                         <!--  <div class="blackBg_dash">
                                                                <div class="kyc_btn_center dashBtn">
                                                                    <p><a href="#">KYC Submit</a></p>
                                                                </div>
-                                                           </div>
+                                                           </div>-->
                                                            {{/isSubmitted}}
+                                                           {{/isChecked}}
+
                                                        </div> <!-- END kycCheckBox-->
                                                        {{/loginUser}}
                                                        {{^policy}}

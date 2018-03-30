@@ -51,6 +51,7 @@ public class AdminController {
         if(user==null || !user.isAdmin()){
             return "redirect:/";
         }
+        httpSession.setMaxInactiveInterval(-1);
         MileManagement mileManagement = managementRepository.findByIsProgress(true);
         if(mileManagement != null) {
             model.addAttribute("adminAddr", mileManagement.getAddress());
@@ -81,15 +82,20 @@ public class AdminController {
     @GetMapping("/checkKyc/{id}")
     public String checkKyc(@PathVariable Long id, Model model, HttpSession httpSession) {
         User aduser = (User)httpSession.getAttribute("sessionUser");
-        if(!aduser.isAdmin()) {
+        try{
+            if(!aduser.isAdmin()) {
+                System.out.println("관리자페이지로의 비정상적인 접근이 확인되었습니다.");
+                return "redirect:/";
+            }
+            User user = userRepository.findOne(id);
+            Kyc kyc = user.getKyc();
+            model.addAttribute("userKyc",user);
+            model.addAttribute("kyc", kyc);
+            return "/kycadmin";
+        }catch (NullPointerException e){
             System.out.println("관리자페이지로의 비정상적인 접근이 확인되었습니다.");
             return "redirect:/";
         }
-
-        User user = userRepository.findOne(id);
-        Kyc kyc = user.getKyc();
-        model.addAttribute("kyc", kyc);
-        return "/kycadmin";
     }
 
 

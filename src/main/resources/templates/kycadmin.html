@@ -44,14 +44,14 @@
                 <section class="m_content mc4">
                     <h3>4. passport 사진</h3>
                     <div class="passportImg">
-                        <img src="/getPassport/{{user.id}}" alt="passportImg">
+                        <img src="/getPassport/{{user.id}}" alt="passportImg" height="600" width="800">
                     </div> <!-- END possportImg-->
                 </section> <!-- END m_content mc4-->
 
                 <section class="m_content mc5">
                     <h3>5. passport 사진 + 셀카사진</h3>
                     <div class="passportImg">
-                        <img src="/getSelfPicture/{{user.id}}" alt="passportImg">
+                        <img src="/getSelfPicture/{{user.id}}" alt="passportImg" height="600" width="800">>
                     </div> <!-- END possportImg-->
                 </section> <!-- END m_content mc5-->
 
@@ -100,7 +100,7 @@
                         <input type="radio" name="result" value="no">
                         <div class="disagreeBox">
                             <span>거절사유</span>
-                            <textarea cols="10" rows="5" name="failReason"></textarea>
+                            <textarea cols="10" rows="5" name="failReason">{{userKyc.failReason}}</textarea>
                         </div> <!-- END disagreeBox-->
                         <input type="submit" value="확인" class="kycSubmit">
                     </form>
@@ -113,7 +113,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script>
     $(document).ready(function () {
-        $('textarea[name=failReason]').css("display", "none");
+        if($('textarea[name=failReason]').val()==null){
+            $('textarea[name=failReason]').css("display", "none");
+        }else{
+            $('textarea[name=failReason]').css("display", "block");
+        }
         $('input[type=radio][name=result]').change(function () {
             if (this.value == 'ok') {
                 $('textarea[name=failReason]').css("display", "none");

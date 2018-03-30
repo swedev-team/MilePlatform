@@ -85,18 +85,19 @@ public class MainController {
             model.addAttribute("totalExMile", totalExMile);
             model.addAttribute("isAddress", dbUser.getAddress()!="");
 
+            if(dbUser.getFailReason().equals("")||dbUser.getFailReason()!=null)
+                model.addAttribute("failReasonModel", dbUser.getFailReason());
+            else
+                model.addAttribute("failReasonModel", false);
+
             if(dbUser.getKycStatus().equals("미확인")) {
                 if(dbUser.isSubmitted()){
                     model.addAttribute("kycResult", "KYC verification is verifying");
                 } else {
                     model.addAttribute("kycResult", "You have not submitted KYC yet");
                 }
-
             } else if (dbUser.getKycStatus().equals("거절")) {
                 model.addAttribute("kycResult","KYC verification has been rejected");
-                if(dbUser.getFailReason().equals("")&&dbUser.getFailReason()==null) {
-                    model.addAttribute("failReasonModel", dbUser.getFailReason());
-                }
             } else {
                 model.addAttribute("kycResult", "KYC verification approved");
             }
