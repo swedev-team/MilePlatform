@@ -17,6 +17,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class AdminController {
@@ -139,6 +140,7 @@ public class AdminController {
         if(result.equals("ok")) {
             user.setChecked(true);
             user.setKycStatus("승인");
+            user.setFailReason("");
         } else {
             if(!failReason.equals("") || failReason != null) {
                 user.setKycStatus("거절");
