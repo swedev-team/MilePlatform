@@ -1,0 +1,111 @@
+/*
+  layout.css에 있는 모든 768px을 991px로 변경 
+*/
+.index .header #myNavbar {
+    right: 80px;
+}
+.index .header .gnbbox ul {
+	list-style:none;
+}
+.index .header .gnbbox .imgbox {
+	float: right;
+	height: 80px;
+	margin-top: 10px;
+}
+.index .header .gnbbox .imgbox img {
+	width: 120px;
+	margin: 8px -55px;
+}
+@media (max-width: 991px) {
+	.index .header #myNavbar {
+		right: 0;
+	}
+	.index .header .gnbbox .imgbox {
+		position: absolute;
+		margin-top: 0;
+		top: 7px;
+		right: 30px;
+	}
+	.index .header .gnbbox .imgbox img {
+		width: 120px;
+		margin: 2px 0px;
+	}
+}
+@media (max-width: 400px) {
+	.index .header .gnbbox .imgbox img {
+		visibility: hidden;
+	}
+}
+@media (min-width: 481px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+	.index .header {
+		height: 60px;
+	}
+	.index .header .logo {
+		margin-top: 5px;
+		margin-bottom: 0;
+		width: 130px;
+	}
+	.index .header .logo img {
+		width: 100%;
+	}
+	.index .navbar-toggle.mobileBtn {
+		margin-top: 12px;
+		margin-right: -10px;
+		border-radius: 0; 
+	}
+	.index .navbar-default .navbar-toggle {
+		border: 0; 
+	}
+	.index .navbar-default .navbar-toggle .icon-bar {
+		background-color: #3326cf;
+		height: 3px; 
+	}
+	.index .navbar-default .navbar-toggle:focus,
+	.index .navbar-default .navbar-toggle:hover {
+		background-color: #fff; 
+	}
+	.index .navbar-default .navbar-toggle:focus .icon-bar,
+	.index .navbar-default .navbar-toggle:hover .icon-bar {
+		background-color: #3326cf; 
+	}
+	.index .navbar-default .navbar-collapse {
+		background-color: #fff;
+		text-align: center;
+		border: 0;
+		padding: 0;
+		width: 200px;
+		box-shadow: 1px 1px 5px #666; 
+	}
+}
+@media (max-width: 1272px) {
+	.contents .roadmapImg .rightCircle {
+		width: 380px;
+		height: 245px;
+		top: -8px;
+	}
+}
+@media (max-width: 1044px) {
+	.contents .roadmapImg .rightCircle {
+		width: 300px;
+		height: 194px;
+		top: 43px;
+		left: -9em;
+	}
+}
+
+.mc5 .partnerBigLogo {
+	background-position: center;
+    width: 100%;
+}
