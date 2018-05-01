@@ -2,11 +2,30 @@
   layout.css에 있는 모든 768px을 991px로 변경 
 */
 .index .header #myNavbar {
-    right: 80px;
+    right: 140px;
 }
 .index .header .gnbbox ul {
 	list-style:none;
 }
+.index .header .gnbbox .langbox{
+	float: right;
+	font-size:1.1em;
+	margin-top: 29px;
+	margin-left: -11px;
+	padding-right: 62px;
+	font-weight: bold;
+}
+.index .header .gnbbox .langbox a:visited ,
+.index .header .gnbbox .langbox a:active{
+	text-decoration: none;
+	color : #9DA5AA;
+}
+.index .header .gnbbox .langbox a:hover{
+	text-decoration: none;
+	color: #000000;
+}
+
+
 .index .header .gnbbox .imgbox {
 	float: right;
 	height: 80px;
@@ -24,7 +43,13 @@
 		position: absolute;
 		margin-top: 0;
 		top: 7px;
-		right: 30px;
+		right: 80px;
+	}
+	.index .header .gnbbox .langbox {
+		position: absolute;
+		margin-top: 0;
+		top: 19px;
+		right: -30px;
 	}
 	.index .header .gnbbox .imgbox img {
 		width: 120px;

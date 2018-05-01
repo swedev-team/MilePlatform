@@ -6,21 +6,17 @@ import com.example.mileico.repository.*;
 import com.example.mileico.utils.PasswordEncode;
 import com.github.mkopylec.recaptcha.validation.RecaptchaValidator;
 import com.github.mkopylec.recaptcha.validation.ValidationResult;
-import com.mysql.jdbc.Blob;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
-import java.util.regex.Pattern;
 
 @Controller
 public class MainController {
@@ -50,7 +46,7 @@ public class MainController {
     PasswordEncode passwordEncode = new PasswordEncode();
 
     @GetMapping("/")
-    public String home(Model model, HttpSession httpSession){
+    public String home(Model model, HttpSession httpSession) {
         User user = (User)httpSession.getAttribute("sessionUser");
         if(user != null){
             model.addAttribute("loginUser", user );
@@ -61,7 +57,15 @@ public class MainController {
     }
 
     @GetMapping("/login/{state}")
-    public String login(HttpSession httpSession, Model model, String alreadyAddr, @PathVariable String state, String loginFail) {
+    public String login(HttpSession httpSession, Model model, String alreadyAddr, @PathVariable String state, String loginFail, HttpServletRequest request) {
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         User sessionUser = (User)httpSession.getAttribute("sessionUser");
         if(sessionUser != null) {
             MileManagement mileManagement = managementRepository.findByIsProgress(true);
@@ -92,14 +96,26 @@ public class MainController {
             }
             if(dbUser.getKycStatus().equals("미확인")) {
                 if(dbUser.isSubmitted()){
-                    model.addAttribute("kycResult", "KYC verification is verifying");
+                    if(lang.equals("en"))
+                        model.addAttribute("kycResult", "KYC verification is verifying");
+                    else
+                        model.addAttribute("kycResult", "KYC验证进行中");
                 } else {
-                    model.addAttribute("kycResult", "You have not submitted KYC yet");
+                    if(lang.equals("en"))
+                        model.addAttribute("kycResult", "You have not submitted KYC yet");
+                    else
+                        model.addAttribute("kycResult", "您还没有提交KYC");
                 }
             } else if (dbUser.getKycStatus().equals("거절")) {
-                model.addAttribute("kycResult","KYC verification has been rejected");
+                if(lang.equals("en"))
+                    model.addAttribute("kycResult","KYC verification has been rejected");
+                else
+                    model.addAttribute("kycResult","KYC验证已被拒绝");
             } else {
-                model.addAttribute("kycResult", "KYC verification approved");
+                if(lang.equals("en"))
+                    model.addAttribute("kycResult", "KYC verification approved");
+                else
+                    model.addAttribute("kycResult", "KYC验证通过");
             }
             return "/dashboard";
         }
@@ -123,8 +139,16 @@ public class MainController {
     }
 
     @PostMapping("/submitkyc")
-    public String tempkyc(Kyc kyc, HttpSession httpSession, MultipartFile passportInput, MultipartFile selfPictureInput, Model model) throws Exception{
+    public String tempkyc(Kyc kyc, HttpSession httpSession, MultipartFile passportInput, MultipartFile selfPictureInput, Model model, HttpServletRequest request) throws Exception{
         User loginUser = (User)httpSession.getAttribute("sessionUser");
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         if(loginUser == null) {
             return "redirect:/login/lgtab";
         }
@@ -140,7 +164,10 @@ public class MainController {
             userRepository.save(loginUser);
         }catch (Exception e){
             e.printStackTrace();
-            model.addAttribute("kycResult", "The image you selected is too large or not supported.");
+            if(lang.equals("en"))
+                model.addAttribute("kycResult", "The image you selected is too large or not supported.");
+            else
+                model.addAttribute("kycResult", "您选择的图片太大或不支持");
             return "/dashboard";
         }
 
@@ -150,24 +177,44 @@ public class MainController {
     @PostMapping("/signup")
     public String signup(User user, HttpSession httpSession, String nationalCode, String phoneNum ,RedirectAttributes redirectAttributes, HttpServletRequest request) {
         ValidationResult result = recaptchaValidator.validate(request);
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         if(result.isSuccess()){
         //if(true){
             if(user.getEmail().equals("")&&user.getEmail() ==null) {
-                redirectAttributes.addAttribute("loginFail", "Please enter your e-mail");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail", "Please enter your e-mail");
+                else
+                    redirectAttributes.addAttribute("loginFail", "请输入您的邮箱");
                 return "redirect:/login/jointab";
             }
             if(user.getPassword().equals("")&&user.getPassword()==null) {
-                redirectAttributes.addAttribute("loginFail", "Please enter your password");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail", "Please enter your password");
+                else
+                    redirectAttributes.addAttribute("loginFail", "请输入您的密码");
                 return "redirect:/login/jointab";
             }
             if(user.getName().equals("") && user.getName()==null) {
-                redirectAttributes.addAttribute("loginFail", "Please enter your name");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail", "Please enter your name");
+                else
+                    redirectAttributes.addAttribute("loginFail", "请输入您的名字");
                 return "redirect:/login/jointab";
             }
             List<User> users = userRepository.findAll();
             for(User listUser: users) {
                 if(listUser.getEmail().equals(user.getEmail())) {
-                    redirectAttributes.addAttribute("loginFail","This is an already signed email");
+                    if(lang.equals("en"))
+                        redirectAttributes.addAttribute("loginFail","This is an already signed email");
+                    else
+                        redirectAttributes.addAttribute("loginFail","该邮箱已注册");
                     return "redirect:/login/jointab";
                 }
             }
@@ -186,15 +233,29 @@ public class MainController {
     @PostMapping("/signin")
     public String signin(User user, HttpSession httpSession,RedirectAttributes redirectAttributes, HttpServletRequest request) {
         ValidationResult result = recaptchaValidator.validate(request);
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         if(result.isSuccess()){
         //if(true){
             User dbUser = userRepository.findByEmail(user.getEmail());
             if(dbUser == null) {
-                redirectAttributes.addAttribute("loginFail", "This user does not exist");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail", "This user does not exist");
+                else
+                    redirectAttributes.addAttribute("loginFail", "该用户不存在");
                 return "redirect:/login/lgtab";
             }
             if(dbUser.getWithdraw().equals("y")){
-                redirectAttributes.addAttribute("loginFail", "The withdrawal user");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail", "The withdrawal user");
+                else
+                    redirectAttributes.addAttribute("loginFail", "退出账号");
                 return "redirect:/login/lgtab";
             }
             else if(passwordEncode.matches(user.getPassword(), dbUser.getPassword())) {
@@ -203,7 +264,10 @@ public class MainController {
 
                 return "redirect:/login/lgtab";
             } else {
-                redirectAttributes.addAttribute("loginFail","The password is incorrect");
+                if(lang.equals("en"))
+                    redirectAttributes.addAttribute("loginFail","The password is incorrect");
+                else
+                    redirectAttributes.addAttribute("loginFail","T密码不正确");
                 return "redirect:/login/lgtab";
             }
         } else {
@@ -225,21 +289,38 @@ public class MainController {
     @PostMapping("/findPassword")
     public String findPassword(String email, String address, Model model, HttpSession httpSession, HttpServletRequest request) {
         ValidationResult result = recaptchaValidator.validate(request);
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         if(result.isSuccess()){
         //if(true){
             if(!address.matches("^0x[a-fA-F0-9]{40}$")) {
-                model.addAttribute("findFail","Invalid address");
+                if(lang.equals("en"))
+                    model.addAttribute("findFail","Invalid address");
+                else
+                    model.addAttribute("findFail","I无效地址");
                 return "/password";
             }
 
             if(email == null || email.equals("")) {
-                model.addAttribute("findFail", "Please enter your email address");
+                if(lang.equals("en"))
+                    model.addAttribute("findFail", "Please enter your email address");
+                else
+                    model.addAttribute("findFail", "请输入您的邮箱");
                 return "/password";
             }
 
             User user = userRepository.findByEmail(email);
             if(user == null || !address.toLowerCase().equals(user.getAddress().toLowerCase())) {
-                model.addAttribute("findFail", "No matches found");
+                if(lang.equals("en"))
+                    model.addAttribute("findFail", "No matches found");
+                else
+                    model.addAttribute("findFail", "未找到响应");
                 return "/password";
             }
             httpSession.setAttribute("sessionUser",  user);
@@ -263,5 +344,4 @@ public class MainController {
         httpSession.removeAttribute("sessionUser");
         return "redirect:/login/lgtab";
     }
-
 }

@@ -30,14 +30,14 @@
                                <li class="active">
                                    <a href="#dashboard" data-toggle="tab">
                                        <span class="left_icon dash_icon"></span>
-                                       <span class="left_txt">DASHBOARD</span>
+                                       <span class="left_txt">{{#i18n}}dashBoard.tab.dashBoard{{/i18n}}</span>
                                    </a>
                                 </li>
 
                                <li>
                                    <a href="#history" data-toggle="tab">
                                        <span class="left_icon history_icon"></span>
-                                       <span class="left_txt">HISTORY</span>
+                                       <span class="left_txt">{{#i18n}}dashBoard.tab.history{{/i18n}}</span>
                                    </a>
                                 </li>
                            </ul> <!-- END Dashboard-->
@@ -49,7 +49,7 @@
                                    <div class="dashboard_content tab-pane fade in active" id="dashboard">
                                        <div class="row">
                                            <div class="col-lg-12">
-                                               <h3 class="desc">Your Profile</h3>
+                                               <h3 class="desc">{{#i18n}}dashBoard.main.profile{{/i18n}}</h3>
 
                                                <div class="logoutBox">
                                                    {{#loginUser}}
@@ -59,7 +59,7 @@
                                                    {{/isAdmin}}
                                                    {{/loginUser}}
                                                    <span class="log_icon"></span>
-                                                   <a href="/userLogout" type="button" class="log_txt">Log Out</a>
+                                                   <a href="/userLogout" type="button" class="log_txt">{{#i18n}}dashBoard.main.logout{{/i18n}}</a>
                                                </div> <!-- END logoutBox-->
                                            </div> <!-- END col-lg-12 -->
                                        </div> <!-- END row-->
@@ -70,11 +70,11 @@
                                                    <div class="panel-body" id="profile_box">
                                                        {{#loginUser}}
                                                        <dl class="infoBox">
-                                                           <dt id="infoname"><strong>Username</strong></dt>
+                                                           <dt id="infoname"><strong>{{#i18n}}dashBoard.userInfo.name{{/i18n}}</strong></dt>
                                                            <dd class="infoName">{{name}}</dd>
-                                                           <dt id="infoemail"><strong>E-mail</strong></dt>
+                                                           <dt id="infoemail"><strong>{{#i18n}}dashBoard.userInfo.email{{/i18n}}</strong></dt>
                                                            <dd class="infoEmail">{{email}}</dd>
-                                                           <dt id="infoaddr"><strong>ETH Address</strong></dt>
+                                                           <dt id="infoaddr"><strong>{{#i18n}}dashBoard.userInfo.address{{/i18n}}</strong></dt>
                                                            <dd class="infoAddress"><a href="https://etherscan.io/address/{{address}}" target="_blank">{{address}}</a></dd>
                                                        </dl> <!-- END infoBox-->
                                                         {{/loginUser}}
@@ -82,13 +82,13 @@
                                                        {{^isFirstDeposit}}
                                                        {{^isAddress}}
                                                        <div class="profile_btn dashBtn dashAddr">
-                                                           <button type="submit" id="updatebt" class="updateBtn2">Set Address</button>
+                                                           <button type="submit" id="updatebt" class="updateBtn2">{{#i18n}}dashBoard.userInfo.setAddress{{/i18n}}</button>
                                                        </div> <!-- END profile_btn-->
                                                        {{/isAddress}}
 
                                                        {{#isAddress}}
                                                        <div class="profile_btn dashBtn dashAddr">
-                                                           <button type="submit" id="updatebt" class="updateBtn2">Update Address</button>
+                                                           <button type="submit" id="updatebt" class="updateBtn2">{{#i18n}}dashBoard.userInfo.updateAddress{{/i18n}}</button>
                                                        </div>
                                                        {{/isAddress}}
 
@@ -96,8 +96,7 @@
 
                                                        {{#isFirstDeposit}}
                                                        <div class="profile_btn dashBtn dashAddr">
-                                                       <h5>The initial deposit is confirmed at the address you saved and
-                                                           you can not change the address.</h5>
+                                                       <h5>{{#i18n}}dashBoard.userInfo.notchange{{/i18n}}</h5>
                                                        </div>
                                                        {{/isFirstDeposit}}
 
@@ -110,23 +109,21 @@
                                                            <div class="talkicon talkicon1"></div>
                                                            <div class="warningIcon"></div>
                                                            <h3 class="warningTitle">
-                                                               DO NOT SEND ETH FROM EXCHANGES <br/>
-                                                               ELSE YOU WILL LOSE THE MONEY!!
+                                                               {{#i18n}}dashBoard.warningbox.title{{/i18n}}
                                                            </h3>
                                                            <div class="talkicon talkicon2"></div>
                                                        </div> <!--END warngin_top_txt -->
                                                        <div class="warning_bottom_txt">
                                                            <ol class="sendOrder">
-                                                               <li>Download ERC-20 wallet (My Etherwallet, imToken, MEW, etc.)</li>
-                                                               <li>Send money from exchange to ERC-20 wallet.</li>
-                                                               <li>Send ETH from ERC-20 wallet to Mile ICO.</li>
+                                                               <li>{{#i18n}}dashBoard.warningbox.List1{{/i18n}}</li>
+                                                               <li>{{#i18n}}dashBoard.warningbox.List2{{/i18n}}</li>
+                                                               <li>{{#i18n}}dashBoard.warningbox.List3{{/i18n}}</li>
                                                            </ol> <!-- END sendOrder-->
                                                        </div> <!-- END warning_bottom_txt-->
                                                    </div> <!--END warningImg-->
 
                                                    <span class="waniginTxt">
-                                                       Please do not send ETH to the contract address.
-                                                       <a href="#">Read the buy guide first.</a>
+                                                      {{#i18n}}dashBoard.warningbox.txt{{/i18n}}
                                                    </span>
                                                </div> <!-- END warningBox-->
                                            </div> <!-- END col-lg-5 -->
@@ -135,12 +132,9 @@
                                                <div class="panel panel-default position_parent">
 
                                                    <div class="panel-body">
-                                                       <h4 class="sub_desc">KYC Progress</h4>
+                                                       <h4 class="sub_desc">{{#i18n}}dashBoard.kyc{{/i18n}}</h4>
                                                        <p class="kyc_txt dash_txt">
-                                                           Token Sale Participants can only get a Mile If they pass two KYC related checks<br/>
-                                                           (KYC submission confirmation, KYC vertification confirmation.)<br/>
-                                                           Please contact <a href="mailto:support@mileico.com">support@mileico.com</a>
-                                                           for KYC relatied inquiries.
+                                                           {{#i18n}}dashBoard.kyc.txt{{/i18n}}
                                                        </p>
                                                        {{#loginUser}}
                                                        <div class="kycCheckBox">
@@ -209,12 +203,12 @@
                                                            {{^isChecked}}
                                                            {{#isSubmitted}}
                                                            <div class="kyc_btn dashBtn">
-                                                               <p><a href="/openKyc" title="KYC submit button">KYC Resubmit</a></p>
+                                                               <p><a href="/openKyc" title="KYC submit button">{{#i18n}}dashBoard.kyc.resubmit{{/i18n}}</a></p>
                                                            </div>
                                                            {{/isSubmitted}}
                                                            {{^isSubmitted}}
                                                            <div class="kyc_btn dashBtn">
-                                                               <p><a href="/openKyc" title="KYC submit button">KYC Submit</a></p>
+                                                               <p><a href="/openKyc" title="KYC submit button">{{#i18n}}dashBoard.kyc.submit{{/i18n}}</a></p>
                                                            </div>
 
                                                          <!--  <div class="blackBg_dash">
@@ -229,19 +223,19 @@
                                                        {{/loginUser}}
                                                        {{^policy}}
                                                        <div class="copyBox">
-                                                           <h4 class="sub_desc">Token Sale ETH Address</h4>
+                                                           <h4 class="sub_desc">{{#i18n}}dashBoard.policy.desc{{/i18n}}</h4>
                                                            <div class="addressBox clearfix dashBtn">
-                                                               <p class="adminAddress">ICO Preparing</p>
-                                                               <button type="button" class="copyBtn" disabled="disabled">Wait</button>
+                                                               <p class="adminAddress">{{#i18n}}dashBoard.policy.preparing{{/i18n}}</p>
+                                                               <button type="button" class="copyBtn" disabled="disabled">{{#i18n}}dashBoard.policy.wait{{/i18n}}</button>
                                                            </div> <!-- END addressBox-->
                                                        </div>
                                                        {{/policy}}
                                                        {{#policy}}
                                                        <div class="copyBox">
-                                                           <h4 class="sub_desc">Token Sale ETH Address</h4>
+                                                           <h4 class="sub_desc">{{#i18n}}dashBoard.policy.desc{{/i18n}}</h4>
                                                            <div class="addressBox clearfix dashBtn">
                                                                <p class="adminAddress">{{address}}</p>
-                                                               <button type="button" class="copyBtn" click="copyToClipboard('#ratio');">Copy</button>
+                                                               <button type="button" class="copyBtn" click="copyToClipboard('#ratio');">{{#i18n}}dashBoard.policy.copy{{/i18n}}</button>
                                                            </div> <!-- END addressBox-->
                                                        </div> <!-- END copyBox -->
                                                        <input type="hidden" id="ratio" value="{{ratio}}">
@@ -256,7 +250,7 @@
                                        <div class="row">
                                            <div class="col-lg-12">
                                                <div class="transBox clearfix">
-                                                   <h4 class="sub_desc">Contribution Calculator</h4>
+                                                   <h4 class="sub_desc">{{#i18n}}dashBoard.caculator{{/i18n}}</h4>
                                                    <form action="#" method="post" class="transForm">
                                                        <div class="form-group transSbox clearfix">
                                                            <label for="etherCoin">ETH</label>
@@ -287,7 +281,7 @@
                                                                <span class="receive_icon eth"></span>
                                                                <div class="totalTxt">
                                                                    <p class="receive_big_txt"><strong>{{#totalDeposit}}{{totalDeposit}}{{/totalDeposit}}</strong>ETH</p>
-                                                                   <p class="receive_small_txt">ETH Received</p>
+                                                                   <p class="receive_small_txt">{{#i18n}}dashBoard.caculator.eth{{/i18n}}</p>
                                                                </div> <!-- END totalTxt-->
                                                            </div> <!-- END reciveBox-->
 
@@ -295,7 +289,7 @@
                                                                <span class="receive_icon mil"></span>
                                                                <div class="totalTxt">
                                                                    <p class="receive_big_txt"><strong>{{#totalExMile}}{{totalExMile}}{{/totalExMile}}</strong>MIL</p>
-                                                                   <p class="receive_small_Txt">MIL Purchased</p>
+                                                                   <p class="receive_small_Txt">{{#i18n}}dashBoard.caculator.mil{{/i18n}}</p>
                                                                </div> <!-- END totalTxt-->
                                                            </div> <!-- END receiveBox-->
                                                        </div> <!-- END totalBox-->
@@ -306,15 +300,15 @@
                                    </div> <!-- END dashboard_content-->
 
                                    <div class="history_content tab-pane fade in" id="history">
-                                       <h3 class="desc">Token Purchase History</h3>
+                                       <h3 class="desc">{{#i18n}}dashBoard.history.title{{/i18n}}</h3>
                                        <div class="row">
                                            <div class="col-sm-12">
                                                 <div class="historyBigBox">
                                            <div class="historyBox historyBoxTitle clearfix">
-                                               <div class="historyDate">Date</div> <!-- END historyDate-->
-                                               <div class="historyAddress">Sending Address</div> <!-- END historyAddress-->
-                                               <div class="historyAmount">ETH Sent</div> <!-- END historySent-->
-                                               <div class="historyPurchased">MileX Purchased</div> <!-- END historyDate-->
+                                               <div class="historyDate">{{#i18n}}dashBoard.history.date{{/i18n}}</div> <!-- END historyDate-->
+                                               <div class="historyAddress">{{#i18n}}dashBoard.history.sendingAddress{{/i18n}}</div> <!-- END historyAddress-->
+                                               <div class="historyAmount">{{#i18n}}dashBoard.history.ethSent{{/i18n}}</div> <!-- END historySent-->
+                                               <div class="historyPurchased">{{#i18n}}dashBoard.history.purchased{{/i18n}}</div> <!-- END historyDate-->
                                            </div> <!-- END historyBox historyBoxTitle-->
                                             {{#history}}
                                            <div class="historyBox historyBoxContents clearfix">
@@ -331,7 +325,7 @@
                                            <!-- 거래내역은 이 위로 올라갑니다. 아래는 total 맨 마지막에 있을 내용입니다.-->
 
                                            <div class="historyBox historyBoxFinish">
-                                               <div class="historyTotalTitle">Total</div> <!-- END historyDate-->
+                                               <div class="historyTotalTitle">{{#i18n}}dashBoard.history.total{{/i18n}}</div> <!-- END historyDate-->
                                                <div class="historyPurchased">{{#totalDeposit}}{{totalDeposit}}{{/totalDeposit}}</div> <!-- END historyPurchased-->
                                                <div class="historyTotal">{{#totalExMile}}{{totalExMile}}{{/totalExMile}}</div> <!-- END historyTotal-->
                                            </div> <!-- END historyBox historyBoxContents-->

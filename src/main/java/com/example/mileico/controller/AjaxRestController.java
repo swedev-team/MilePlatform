@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -283,27 +285,47 @@ public class AjaxRestController {
     }
 
     @PostMapping("/saveAddr")
-    public String saveAddr(String address, HttpSession httpSession) {
+    public String saveAddr(String address, HttpSession httpSession, HttpServletRequest request) {
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         User user = (User) httpSession.getAttribute("sessionUser");
         if (user == null) {
-            return "please login";
+            if(lang.equals("en"))
+                return "please login";
+            else
+                return "请登录";
         }
 
         if (!address.matches("^0x[a-fA-F0-9]{40}$")) {
-            return "Invalid address";
+            if(lang.equals("en"))
+                return "Invalid address";
+            else
+                return "无效地址";
         }
 
 
         User dbUser = userRepository.findOne(user.getId());
         if (dbUser.isFirstDeposit()) {
-            return "You already have a deposit record at this address";
+            if(lang.equals("en"))
+                return "You already have a deposit record at this address";
+            else
+                return "您的地址已有存款记录";
         }
         List<User> users = userRepository.findAll();
 
         String saveAddr = address.toLowerCase();
         for (User userAttr : users) {
             if (userAttr.getAddress().equals(saveAddr)) {
-                return "This address is already in use. Please use a different address";
+                if(lang.equals("en"))
+                    return "This address is already in use. Please use a different address";
+                else
+                    return "该地址已被使用请更换其他地址";
             }
         }
         user.setAddress(saveAddr);
@@ -318,12 +340,26 @@ public class AjaxRestController {
     }
 
     @PostMapping("/subscribe")
-    public String subscribe(String email) {
+    public String subscribe(String email , HttpServletRequest request) {
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         if ("".equals(email) || email == null) {
-            return "Please enter your e-mail";
+            if(lang.equals("en"))
+                return "Please enter your e-mail";
+            else
+                return "请输入您的邮箱";
         }
         if (!email.matches("^[_a-z0-9-]+(.[_a-z0-9-]+)*@(?:\\w+\\.)+\\w+$")) {
-            return "Email format is invalid";
+            if(lang.equals("en"))
+                return "Email format is invalid";
+            else
+                return "邮箱格式无效";
         }
         Subscriber subscriber = new Subscriber();
         subscriber.setEmail(email.trim());
@@ -332,16 +368,32 @@ public class AjaxRestController {
     }
 
     @PostMapping("/checkProject")
-    public String checkProject(HttpSession httpSession) {
+    public String checkProject(HttpSession httpSession, HttpServletRequest request) {
+        String lang = "en";
+        Cookie cookie[] = request.getCookies();
+        for(Cookie cookie1 : cookie){
+            if(cookie1.getName().equals("lang")){
+                lang=cookie1.getValue();
+                break;
+            }
+        }
         User user = (User) httpSession.getAttribute("sessionUser");
-        if (user == null)
-            return "please login";
-
+        if (user == null) {
+            if(lang.equals("en"))
+                return "please login";
+            else
+                return "请登录";
+        }
         MileManagement mileManagement = managementRepository.findByIsProgress(true);
-        if (mileManagement != null)
+        if (mileManagement != null) {
             return "success";
-        else
-            return "ico closed, Please wait for next ico";
+        }
+        else {
+            if(lang.equals("en"))
+                return "ico closed, Please wait for next ico";
+            else
+                return "ICO关闭，请等待下一轮ICO";
+        }
     }
 
     class MileReturnModel {

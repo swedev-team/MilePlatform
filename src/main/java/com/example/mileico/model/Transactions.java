@@ -216,4 +216,30 @@ public class Transactions {
     public Boolean getChecked() {
         return isChecked;
     }
+
+    @Override
+    public String toString() {
+        return "Transactions{" +
+                "id=" + id +
+                ", blockNumber='" + blockNumber + '\'' +
+                ", timeStamp='" + timeStamp + '\'' +
+                ", hash='" + hash + '\'' +
+                ", nonce='" + nonce + '\'' +
+                ", blockHash='" + blockHash + '\'' +
+                ", transactionIndex='" + transactionIndex + '\'' +
+                ", sender='" + sender + '\'' +
+                ", receiver='" + receiver + '\'' +
+                ", value='" + value + '\'' +
+                ", gas='" + gas + '\'' +
+                ", gasPrice='" + gasPrice + '\'' +
+                ", isError='" + isError + '\'' +
+                ", txreceipt_status='" + txreceipt_status + '\'' +
+                ", cumulativeGasUsed='" + cumulativeGasUsed + '\'' +
+                ", gasUsed='" + gasUsed + '\'' +
+                ", confirmations='" + confirmations + '\'' +
+                ", isChecked=" + isChecked +
+                ", depositDate='" + depositDate + '\'' +
+                ", exMile='" + exMile + '\'' +
+                '}';
+    }
 }

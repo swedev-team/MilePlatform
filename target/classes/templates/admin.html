@@ -859,7 +859,6 @@
         //ajax 프로젝트 삭제 ==> 몇회차 정보인지 안떙겨지는 이슈
         $(document).on('click', '.removeProject', function () {
             var idx = $(this).attr('id');
-
             if (confirm('정말 프로젝트를 삭제하시겠습니까?')) {
                 $.ajax({
                     url: '/admin/removeProject',

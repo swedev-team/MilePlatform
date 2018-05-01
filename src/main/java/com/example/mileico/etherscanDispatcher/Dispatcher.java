@@ -34,4 +34,8 @@ public class Dispatcher {
         return result;
     }
 
+    public void disconnect(){
+        conn.disconnect();;
+    }
+
 }
