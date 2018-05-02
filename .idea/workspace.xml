@@ -2,48 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26b4c400-7ab1-4f4b-8395-3f936e7858cd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/config/Appconfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/mile_g_zh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kycpdf/Mile_buy_guide.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mileico_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mileico_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mileico.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mileico.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/MileicoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/MileicoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/AjaxRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/AjaxRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/etherscanDispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/etherscanDispatcher/Dispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/model/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/model/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mileico/scheduler/CronTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mileico/scheduler/CronTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/mile_aud_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mile_aud_text.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/mile_g.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mile_g_en.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/mileaud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/kycpdf/Policy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/kycpdf/Policy.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/kycpdf/Use.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/kycpdf/Use.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminHistory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/kyc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/kyc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/layout2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/mile_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/kycpdf/Policy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/kycpdf/Policy.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/kycpdf/Use.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/kycpdf/Use.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminHistory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/kyc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/kyc.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,8 +64,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="828" column="98" selection-start-line="828" selection-start-column="98" selection-end-line="828" selection-end-column="98" />
+            <state relative-caret-position="119">
+              <caret line="438" column="68" selection-start-line="438" selection-start-column="68" selection-end-line="438" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -133,6 +95,22 @@
       </file>
       <file leaf-file-name="message_en_US.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle" />
+        </entry>
+      </file>
+      <file leaf-file-name="message.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="ResourceBundle" />
+        </entry>
+      </file>
+      <file leaf-file-name="message_zh.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="ResourceBundle" />
         </entry>
@@ -146,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -170,9 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>m_content</find>
-      <find>mc4_pl</find>
-      <find>form</find>
       <find>failReason</find>
       <find>imgbox</find>
       <find>active</find>
@@ -200,6 +175,9 @@
       <find>en</find>
       <find>Mile</find>
       <find>Mile_buy</find>
+      <find>Soon</find>
+      <find>white</find>
+      <find>whitePaper</find>
     </findStrings>
     <replaceStrings>
       <replace>mile</replace>
@@ -215,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/example/mileico/Test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/layout3.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/layout2.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
@@ -260,12 +237,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mileico/config/Appconfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/AjaxRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login2.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/kyc.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" />
       </list>
     </option>
   </component>
@@ -454,6 +432,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'message'" type="a6c14932:ResourceBundleNode" />
+            </path>
+            <path>
+              <item name="mileico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mileico" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -506,22 +493,22 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\i18n" />
-      <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources" />
-      <recent name="D:\workspace\mileico\src\main\resources\static\css" />
-      <recent name="D:\workspace\mileico\src\main\resources\static\images" />
-      <recent name="D:\workspace\mileico\src\main\resources\templates" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.mileico.model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\i18n" />
       <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\static\images" />
       <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\java\com\example\mileico" />
       <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\static" />
       <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\static\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.mileico.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources\i18n" />
+      <recent name="C:\Users\staff\Downloads\workspace\mileico\src\main\resources" />
+      <recent name="D:\workspace\mileico\src\main\resources\static\css" />
+      <recent name="D:\workspace\mileico\src\main\resources\static\images" />
+      <recent name="D:\workspace\mileico\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -658,7 +645,7 @@
     </recent_temporary>
   </component>
   <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",GROUP_BY_PREFIXES" />
+    <option name="ACTIVE_ACTIONS" value=",GROUP_BY_PREFIXES,ALPHA_COMPARATOR" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -759,7 +746,7 @@
       <workItem from="1524190845231" duration="9849000" />
       <workItem from="1524528156760" duration="37496000" />
       <workItem from="1524706447847" duration="19247000" />
-      <workItem from="1525136279754" duration="13462000" />
+      <workItem from="1525136279754" duration="16254000" />
     </task>
     <servers />
   </component>
@@ -796,7 +783,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="847071000" />
+    <option name="totallyTimeSpent" value="849863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,25 +901,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2812">
-          <caret line="148" column="27" lean-forward="true" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11252#11253#0" expanded="true" />
-            <element signature="e#11286#11287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14003">
-          <caret line="737" column="99" lean-forward="true" selection-start-line="737" selection-start-column="99" selection-end-line="737" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kyc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15257">
@@ -1237,23 +1205,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="828" column="98" selection-start-line="828" selection-start-column="98" selection-end-line="828" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1276,10 +1233,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="438" column="68" selection-start-line="438" selection-start-column="68" selection-end-line="438" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="ResourceBundle" />
     </entry>
   </component>
   <component name="masterDetails">
