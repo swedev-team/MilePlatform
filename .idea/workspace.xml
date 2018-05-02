@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26b4c400-7ab1-4f4b-8395-3f936e7858cd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="438" column="68" selection-start-line="438" selection-start-column="68" selection-end-line="438" selection-end-column="68" />
+            <state relative-caret-position="302">
+              <caret line="438" column="84" selection-start-line="438" selection-start-column="84" selection-end-line="438" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -70,62 +71,13 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2634">
-              <caret line="188" column="10" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
+            <state relative-caret-position="475">
+              <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#11252#11253#0" expanded="true" />
                 <element signature="e#11286#11287#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message_en_US.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="48" column="99" lean-forward="true" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file leaf-file-name="message.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file leaf-file-name="message_zh.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -145,8 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>failReason</find>
-      <find>imgbox</find>
       <find>active</find>
       <find>buy</find>
       <find>Alp</find>
@@ -175,6 +125,8 @@
       <find>Soon</find>
       <find>white</find>
       <find>whitePaper</find>
+      <find>_blank</find>
+      <find>kycpdf</find>
     </findStrings>
     <replaceStrings>
       <replace>mile</replace>
@@ -237,10 +189,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/kyc.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
       </list>
     </option>
   </component>
@@ -273,7 +225,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1924" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -285,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -429,15 +383,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'message'" type="a6c14932:ResourceBundleNode" />
-            </path>
-            <path>
-              <item name="mileico" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mileico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -461,7 +406,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,10 +428,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../wallet" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5472155" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -743,7 +688,9 @@
       <workItem from="1524190845231" duration="9849000" />
       <workItem from="1524528156760" duration="37496000" />
       <workItem from="1524706447847" duration="19247000" />
-      <workItem from="1525136279754" duration="16396000" />
+      <workItem from="1525136279754" duration="16645000" />
+      <workItem from="1525229322261" duration="1946000" />
+      <workItem from="1525238943324" duration="25000" />
     </task>
     <servers />
   </component>
@@ -780,7 +727,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="850005000" />
+    <option name="totallyTimeSpent" value="852225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,11 +739,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.32861805" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026652" side_tool="true" weight="0.36987817" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info id="Capture Tool" order="2" />
@@ -809,17 +756,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32861805" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32853982" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32853982" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.37028825" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.6169772" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.37028825" />
       <window_info anchor="bottom" id="Spring" order="17" weight="0.32853982" />
       <window_info anchor="bottom" id="CheckStyle" order="11" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32853982" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48891786" visible="true" weight="0.28784648" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48891786" visible="true" weight="0.29424307" />
       <window_info anchor="right" id="Bean Validation" order="2" weight="0.32995737" />
       <window_info id="Web" order="6" sideWeight="0.5092492" side_tool="true" weight="0.2782516" />
       <window_info anchor="right" id="SciView" order="1" weight="0.3296" />
@@ -831,6 +777,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32853982" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -898,13 +845,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3914">
+          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11252#11253#0" expanded="true" />
+            <element signature="e#11286#11287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5662">
+          <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kyc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15257">
           <caret line="803" lean-forward="true" selection-start-line="803" selection-end-line="803" />
-          <folding>
-            <marker date="1525152135235" expanded="true" signature="28610:28624" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,36 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <marker date="1523856612203" expanded="true" signature="43874:44365" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="44098:44305" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47429:51775" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47485:51740" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47548:51701" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47737:51658" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47799:51610" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47888:51559" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="47973:48594" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="48121:48535" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="48671:49143" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="48821:49084" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="49220:50195" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="49376:50136" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="49468:50073" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="49666:50006" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="50272:51184" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="50432:51125" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="50525:51062" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="50622:50995" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="51444:51504" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="52120:52416" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="54938:56351" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="55078:55446" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="55139:55393" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="55519:56300" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="55657:56245" ph="..." />
-            <marker date="1523856612203" expanded="true" signature="55740:56186" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,13 +1041,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1146,29 +1087,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-941">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/modernizr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-941" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/dash.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2252">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#dd#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2252" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
@@ -1189,9 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="1033" column="99" selection-start-line="1033" selection-start-column="94" selection-end-line="1033" selection-end-column="99" />
-          <folding>
-            <marker date="1525152135235" expanded="true" signature="28610:28624" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,22 +1123,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2634">
-          <caret line="188" column="10" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11252#11253#0" expanded="true" />
-            <element signature="e#11286#11287#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1228,35 +1137,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        <state relative-caret-position="19">
+          <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mileico/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11252#11253#0" expanded="true" />
+            <element signature="e#11286#11287#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="438" column="68" selection-start-line="438" selection-start-column="68" selection-end-line="438" selection-end-column="68" />
+        <state relative-caret-position="302">
+          <caret line="438" column="84" selection-start-line="438" selection-start-column="84" selection-end-line="438" selection-end-column="84" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="48" column="99" lean-forward="true" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1329,6 +1234,17 @@
             <option name="proportions">
               <list>
                 <option value="0.5472155" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
