@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26b4c400-7ab1-4f4b-8395-3f936e7858cd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,17 +90,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_en_US.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="message_en_US.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="399">
+              <caret line="48" column="99" lean-forward="true" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
             </state>
           </provider>
           <provider editor-type-id="ResourceBundle" />
         </entry>
       </file>
-      <file leaf-file-name="message.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="ResourceBundle" />
@@ -230,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/message_ko.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_ko.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/message.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_en.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/add.css" />
@@ -243,6 +239,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/message.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" />
       </list>
     </option>
@@ -746,7 +743,7 @@
       <workItem from="1524190845231" duration="9849000" />
       <workItem from="1524528156760" duration="37496000" />
       <workItem from="1524706447847" duration="19247000" />
-      <workItem from="1525136279754" duration="16254000" />
+      <workItem from="1525136279754" duration="16396000" />
     </task>
     <servers />
   </component>
@@ -783,7 +780,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="849863000" />
+    <option name="totallyTimeSpent" value="850005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1245,14 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh.properties">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="ResourceBundle" />
@@ -1260,6 +1249,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="99" lean-forward="true" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
     </entry>
   </component>
   <component name="masterDetails">
