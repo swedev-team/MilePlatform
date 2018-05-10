@@ -43,7 +43,7 @@ public class CronTable {
     DepositRepository depositRepository;
 
     //한시간에 한번씩, 0분 10분에 실행
-    //@Scheduled(cron = "0 10 * * * ?")
+    @Scheduled(cron = "0 10 * * * ?")
     public void getTransactionInfo() throws IOException {
         MileManagement mileManagement = managementRepository.findByIsProgress(true);
         if(mileManagement != null) {
@@ -77,7 +77,7 @@ public class CronTable {
     }
 
     //한시간에 한번씩, 15분에 실행
-    //@Scheduled(cron = "0 15 * * * ?")
+    @Scheduled(cron = "0 15 * * * ?")
     public void updateDepositInfo() {
         MileManagement mileManagement = managementRepository.findByIsProgress(true);
         if(mileManagement != null) {
@@ -123,7 +123,7 @@ public class CronTable {
     }
 
     //하루에 한번씩, 하루가 끝날때
-    //@Scheduled(cron = "59 59 23 * * ?")
+    @Scheduled(cron = "59 59 23 * * ?")
     public void checkFinishByDate() throws IOException{
         getTransactionInfo();
         updateDepositInfo();
